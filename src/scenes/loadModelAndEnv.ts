@@ -16,7 +16,7 @@ import "@babylonjs/core/Materials/Textures/Loaders/envTextureLoader";
 
 
 // digital assets
-import controllerModel from "../../assets/glb/base.glb";
+import controllerModel from "../../assets/glb/test123.glb"
 import roomEnvironment from "../../assets/environment/room.env"
 
 export class LoadModelAndEnvScene implements CreateSceneClass {
@@ -75,7 +75,7 @@ export class LoadModelAndEnvScene implements CreateSceneClass {
         
 
         // just scale it so we can see it better
-        importResult.meshes[0].scaling.scaleInPlace(10);
+        importResult.meshes[0].scaling.scaleInPlace(2);
         importResult.meshes[0].position = new Vector3(0 ,2,3)
 
         return scene;
